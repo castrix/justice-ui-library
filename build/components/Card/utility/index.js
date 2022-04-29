@@ -1,0 +1,1 @@
+import{_ as e}from"../../../tslib.es6-ee5f1b9a.js";import{jsx as r}from"react/jsx-runtime";import"../../../index-0da212fe.js";import"../../../style-inject.es-1f59c1d0.js";var i=function(i){var t=i.children;return r("div",e({className:"information-table"},{children:t}))};export{i as CardInformationTable};

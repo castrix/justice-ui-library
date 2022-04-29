@@ -13,16 +13,40 @@ import typescript from "@rollup/plugin-typescript";
 import postcss from "rollup-plugin-postcss";
 import postcssurl from "postcss-url";
 import { terser } from "rollup-plugin-terser";
+import multiInput from "rollup-plugin-multi-input";
+import fs from "fs";
+import path from "path";
 
-import packageJson from "./package.json";
+function findFilesInDirectory(startPath, fileExtensionFilters) {
+  let results = [];
+  if (!fs.existsSync(startPath)) {
+    return;
+  }
+
+  const files = fs.readdirSync(startPath);
+  const forbiddenExtension = [".d.ts", ".stories.tsx"];
+  for (const file of files) {
+    const filename = path.join(startPath, file);
+    const stat = fs.lstatSync(filename);
+    if (stat.isDirectory()) {
+      results = results.concat(findFilesInDirectory(filename, fileExtensionFilters));
+    } else {
+      const isFilterMatched = fileExtensionFilters.some((filter) => filename.endsWith(filter));
+      const isForbiddenFile = forbiddenExtension.some((extension) => filename.endsWith(extension));
+
+      if (!isFilterMatched || isForbiddenFile) continue;
+      results.push(filename);
+    }
+  }
+  return results;
+}
 
 export default {
-  input: "./src/index.ts",
+  input: findFilesInDirectory("./src", [".ts", ".tsx"]),
   output: [
     {
-      file: packageJson.module,
+      dir: "build",
       format: "esm",
-      sourcemap: true,
       assetFileNames: "[name]-[hash][extname]",
     },
   ],
@@ -31,6 +55,7 @@ export default {
     resolve(),
     commonjs(),
     typescript({ tsconfig: "./tsconfig.json", exclude: "**/*.stories.tsx" }),
+    multiInput(),
     postcss({
       extract: false,
       modules: { generateScopedName: "[local]___[hash:base64:5]" },

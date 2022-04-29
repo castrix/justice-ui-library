@@ -1,0 +1,1 @@
+import{_ as t}from"../tslib.es6-ee5f1b9a.js";import{jsx as n}from"react/jsx-runtime";var r=function(r,e){return void 0===e&&(e=4),r.split("\n").map((function(r,i){return n("p",t({style:{margin:"unset",marginTop:i?e:"unset"}},{children:r}),"".concat(i,"-").concat(r))}))};export{r as addLineBreaks};

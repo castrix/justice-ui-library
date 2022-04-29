@@ -1,0 +1,1 @@
+import{_ as e}from"../tslib.es6-ee5f1b9a.js";var r=function(){for(var r=[],t=0;t<arguments.length;t++)r[t]=arguments[t];return Object.freeze(r.reduce((function(r,t){var n;return e(e({},r),((n={})[t]=t,n))}),Object.create(null)))},t=function(e,r){return!!Object.values(r).find((function(r){return r===e}))};export{r as Enum,t as isKeyOfEnum};

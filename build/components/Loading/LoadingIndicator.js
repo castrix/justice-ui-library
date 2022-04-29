@@ -1,0 +1,1 @@
+import{jsx as r}from"react/jsx-runtime";import{c as i}from"../../index-6ea95111.js";import"../../LoadingIndicator-8ec68baf.js";import"../../style-inject.es-1f59c1d0.js";var o=function(o){var a=o.size;return r("span",{className:i("loading-icon",void 0===a?"normal":a)})};export{o as LoadingIndicator};

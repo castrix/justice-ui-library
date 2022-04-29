@@ -1,0 +1,1 @@
+import"../constants/containerSize.js";import{DEFAULT_MIN_VALUE as t}from"../constants/common.js";import"../constants/password.js";import"../types/enum.js";import"../tslib.es6-ee5f1b9a.js";function s(s,o,n){var r=!isNaN(Number(s)),e=!!n&&"."===s,i=!!o&&o<t&&"-"===s,m=s.length>1;return!(r||e||i||m)}export{s as isForbiddenKey};

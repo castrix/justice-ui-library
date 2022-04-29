@@ -1,0 +1,1 @@
+import{_ as e}from"../../tslib.es6-ee5f1b9a.js";import{jsxs as r,jsx as i}from"react/jsx-runtime";import"../../index-4235621a.js";import"../../style-inject.es-1f59c1d0.js";var s=function(s){var t=s.children,a=s.title;return r("div",e({className:"box"},{children:[i("div",e({className:"header"},{children:a})),i("div",e({className:"body"},{children:t}))]}))};export{s as Box};
