@@ -1,1 +1,1 @@
-import{_ as t}from"../../../tslib.es6-ee5f1b9a.js";import{jsx as r}from"react/jsx-runtime";import"../../../TagList-b738cbfc.js";import"../../../style-inject.es-1f59c1d0.js";var s=function(s){var e=s.children;return r("div",t({className:"styled-atlaskit-tag-list"},{children:e}))};export{s as TagList};
+import{_ as r}from"../../../tslib.es6-ee5f1b9a.js";import{jsx as t}from"react/jsx-runtime";var e=function(e){var a=e.children;return t("div",r({className:"styled-atlaskit-tag-list"},{children:a}))};export{e as TagList};

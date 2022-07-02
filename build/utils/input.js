@@ -1,1 +1,1 @@
-import"../constants/containerSize.js";import{DEFAULT_MIN_VALUE as t}from"../constants/common.js";import"../constants/password.js";import"../types/enum.js";import"../tslib.es6-ee5f1b9a.js";function s(s,o,n){var r=!isNaN(Number(s)),e=!!n&&"."===s,i=!!o&&o<t&&"-"===s,m=s.length>1;return!(r||e||i||m)}export{s as isForbiddenKey};
+import{DEFAULT_MIN_VALUE as n}from"../constants/common.js";function o(o,r,t){var m=!isNaN(Number(o)),e=!!t&&"."===o,s=!!r&&r<n&&"-"===o,a=o.length>1;return!(m||e||s||a)}export{o as isForbiddenKey};

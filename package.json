@@ -9,7 +9,8 @@
     "clean": "rimraf build",
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook -o docs-build"
+    "build-storybook": "build-storybook -o docs-build",
+    "postinstall": "node scripts/postInstall"
   },
   "homepage": "https://accelbyte.github.io/justice-ui-library/",
   "dependencies": {
@@ -89,5 +90,6 @@
   },
   "resolutions": {
     "react": "17.0.2"
-  }
+  },
+  "sideEffects": false
 }

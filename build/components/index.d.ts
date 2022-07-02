@@ -1,5 +1,6 @@
 export * from "./styled-atlaskit/Button/Button";
 export * from "./styled-atlaskit/DynamicTable/DynamicTable";
+export * from "./styled-atlaskit/CheckboxSelect";
 export * from "./styled-atlaskit/Modal/Modal";
 export * from "./styled-atlaskit/Modal/utility";
 export * from "./styled-atlaskit/Select/Select";

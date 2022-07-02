@@ -1,1 +1,0 @@
-import{s as t}from"./style-inject.es-1f59c1d0.js";t(".styled-atlaskit-tag-list{display:flex;flex-direction:row;flex-wrap:wrap}.styled-atlaskit-tag-list .styled-atlaskit-tag:not(:last-child){margin-right:8px}");

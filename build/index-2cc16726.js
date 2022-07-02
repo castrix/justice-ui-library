@@ -1,1 +1,0 @@
-import{s as o}from"./style-inject.es-1f59c1d0.js";o('@import url("https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap");div[class|=Droplist__Content] span[role=menuitem]:not([aria-disabled=true]):hover{background-color:#f5f6f8}div[class|=Droplist__Content] span[role=menuitem]:not([aria-disabled=true]):active{background-color:#e1e4e9}');
