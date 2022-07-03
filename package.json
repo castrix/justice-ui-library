@@ -91,5 +91,9 @@
   "resolutions": {
     "react": "17.0.2"
   },
-  "sideEffects": false
+  "sideEffects": [
+    "**/*.scss",
+    "**/*.css",
+    "**/*.scss.js"
+  ]
 }
