@@ -1,1 +1,1 @@
-import{DEFAULT_MIN_VALUE as n}from"../constants/common.js";function o(o,r,t){var m=!isNaN(Number(o)),e=!!t&&"."===o,s=!!r&&r<n&&"-"===o,a=o.length>1;return!(m||e||s||a)}export{o as isForbiddenKey};
+import{DEFAULT_MIN_VALUE as n}from"../constants/common.js";function o(o,t,r){const m=!isNaN(Number(o)),s=!!r&&"."===o,c=!!t&&t<n&&"-"===o,e=o.length>1;return!(m||s||c||e)}export{o as isForbiddenKey};

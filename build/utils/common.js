@@ -1,1 +1,1 @@
-var r=function(r,t){var n;void 0===t&&(t=500);return function(){for(var o=[],e=0;e<arguments.length;e++)o[e]=arguments[e];clearTimeout(n),n=setTimeout((function(){return r.apply(void 0,o)}),t)}};export{r as debounce};
+const e=(e,t=500)=>{let o;return(...r)=>{clearTimeout(o),o=setTimeout((()=>e(...r)),t)}};export{e as debounce};

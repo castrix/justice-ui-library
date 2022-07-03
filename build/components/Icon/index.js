@@ -1,1 +1,1 @@
-import{a,_ as e}from"../../tslib.es6-ee5f1b9a.js";import{jsx as s}from"react/jsx-runtime";import{c as r}from"../../index-6ea95111.js";var m=function(m){var t=m.name,i=m.className,o=a(m,["name","className"]);return s("i",e({className:r(t,i)},o))};export{m as Icon};
+import{jsx as a}from"react/jsx-runtime";import{c as e}from"../../index-6ea95111.js";const m=({name:m,className:s,...r})=>a("i",{className:e(m,s),...r});export{m as Icon};
