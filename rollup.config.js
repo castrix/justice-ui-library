@@ -14,6 +14,7 @@ import postcss from "rollup-plugin-postcss";
 import postcssurl from "postcss-url";
 import { terser } from "rollup-plugin-terser";
 import multiInput from "rollup-plugin-multi-input";
+import replace from "@rollup/plugin-replace";
 import fs from "fs";
 import path from "path";
 
@@ -52,6 +53,9 @@ export default {
   ],
   plugins: [
     peerDepsExternal(),
+    replace({
+      "process.env.NODE_ENV": JSON.stringify("production"),
+    }),
     resolve(),
     commonjs(),
     typescript({ tsconfig: "./tsconfig.json", exclude: "**/*.stories.tsx" }),
