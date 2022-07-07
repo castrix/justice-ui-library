@@ -3,7 +3,7 @@
   "version": "0.6.4",
   "author": "AccelByte Inc",
   "license": "AccelByte License",
-  "module": "./build/index.js",
+  "exports": "./build/index.js",
   "repository": "git@github.com:AccelByte/justice-ui-library.git",
   "scripts": {
     "clean": "rimraf build",
